@@ -12,9 +12,5 @@ $(function() {
       $('<li></li>').text(dream).appendTo('ul#dreams');
     });
   });
-  
-  $.post('/', function() {
-    
-  })
 
 });
