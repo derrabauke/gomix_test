@@ -28,9 +28,9 @@ app.post("/dreams", function (request, response) {
 
 // Simple in-memory store for now
 var dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
+  "Ahora o nunca!",
+  "Ni antes ni despues.",
+  "Lametablemente..."
 ];
 
 // listen for requests :)

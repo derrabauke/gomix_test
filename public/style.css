@@ -18,7 +18,7 @@ body {
 
 h1 {
   font-weight: bold;
-  color: pink;
+  color: #8F0CE8;
 }
 
 .bold {
@@ -32,7 +32,7 @@ p {
 form {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: cyan;
+  background-color: #699CFF;
   display: inline-block;
   width: 100%;
   max-width: 340px;
@@ -49,21 +49,43 @@ input {
   font-size: 16px;
 }
 
-button {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  box-shadow: 2px 2px teal;
+.button {
+  border-radius: 4px;
+  background-color: #FFE30D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
   cursor: pointer;
+  margin: 5px;
 }
 
-button:hover {
-  background-color: yellow;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-button:active {
-  box-shadow: none;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 ul {
   padding-left: 20px;  
